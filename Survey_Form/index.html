@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ElectriLabs Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+      <h1 id="title">Join the Team</h1>
+        <main>
+            <form id="survey-form" class="container">
+                <p id="description">Please fill out this form with the required information</p>
+
+                <label id="name-label" for="name">Name and Surname</label>
+                <input id="name" class="input bottom-space" type="text" placeholder="Enter your name and surname" required>
+
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="input bottom-space" type="email" placeholder="Enter your email" required>
+
+                <label id="number-label" for="number">Age</label>
+                <input id="number" class="input bottom-space" type="number" min="0" max="30" placeholder="Enter your age" required>
+
+                <label for="focus-area">Gender</label>
+                <div id="focus-area" class="container bottom-space">
+                    <label for="radio-1" class="overwrite"><input id="radio-1" name="radio-set" type="radio" value="radio-1">
+                        Male</label>
+                    <label for="radio-2" class="overwrite"><input id="radio-2" name="radio-set" type="radio" value="radio-2">
+                        Female</label>
+                    <label for="radio-3" class="overwrite"><input id="radio-3" name="radio-set" type="radio" value="radio-3">
+                        Other</label>
+                </div>
+
+                <label id="name-label" for="name">Github</label>
+                <input id="name" class="input bottom-space" type="url" placeholder="Enter your github link" required>
+
+                <label id="number-label" for="number">How long have you been involved in software?</label>
+                <input id="number" class="input bottom-space" type="number" min="0" max="30" placeholder="Enter a year" required>
+
+                <label id="dropdown-label" for="dropdown">Which field are you interested in as a programmer?</label>
+                <select id="dropdown" class="option bottom-space">
+                    <option disabled selected value>Select an option</option>
+                    <option value="option1">Artificial Inteligence</option>
+                    <option value="option2">Backend</option>
+                    <option value="option2">Frontend</option>
+                    <option value="option2">UI/UX</option>
+                    <option value="option2">Web3 and Blockchain</option>
+                    <option value="option2">Devops</option>
+                </select>
+
+                <label for="checkboxes">Which programming languages do you know?</label>
+                <div id="checkboxes" class="container bottom-space overwrite">
+                    <label for="checkbox-1">
+                      <input type="checkbox" id="checkbox-1" name="checkbox-set" value="checkbox-1">
+                        HTML and CSS
+                    </label>
+                    <label for="checkbox-2">
+                      <input type="checkbox" id="checkbox-2" name="checkbox-set"value="checkbox-2">
+                        JavaScript
+                    </label>
+                    <label for="checkbox-3">
+                      <input type="checkbox" id="checkbox-3" name="checkbox-set"value="checkbox-3">
+                        Python
+                    </label>
+                    <label for="checkbox-4">
+                      <input type="checkbox" id="checkbox-4" name="checkbox-set"value="checkbox-4">
+                        Go
+                    </label>
+                    <label for="checkbox-5">
+                      <input type="checkbox" id="checkbox-5" name="checkbox-set"value="checkbox-5">
+                        Rust
+                    </label>
+                    <label for="checkbox-6">
+                      <input type="checkbox" id="checkbox-6" name="checkbox-set"value="checkbox-6">
+                        C#
+                    </label>
+                    <label for="checkbox-7">
+                      <input type="checkbox" id="checkbox-7" name="checkbox-set" value="checkbox-7">
+                        Cairo
+                    </label>
+                    <label for="checkbox-8">
+                      <input type="checkbox" id="checkbox-8" name="checkbox-set" value="checkbox-8">
+                        Solidty
+                    </label>
+                    <label for="checkbox-9">
+                      <input type="checkbox" id="checkbox-9" name="checkbox-set" value="checkbox-9">
+                        Other (please specify)
+                      <input id="specify" class="input" type="text" placeholder="Please specify here">
+                      </label>
+                </div>
+                <label id="textarea-label" for="textarea">Could you briefly explain why you want to be a part of the ElectriLabs team?</label>
+                <textarea id="textarea" placeholder="Enter your message here..."></textarea>
+                <div class="top-space">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
