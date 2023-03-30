@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="ElectriLabs-logo.png" alt="logo">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Features</h2>
+      <p>
+        information...
+      </p>
+      <p>Introduction Video:</p>
+      <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+      
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>
+        <ul>
+            <li>First option</li>
+            <li>Second option</li>
+            <li>Third option</li>
+            </ul>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="form" class="container" action="https://www.freecodecamp.com/email-submit">
+        <p id="description">Please fill out this form with the required information</p>
+
+        <label id="name-label" for="name">Name and Surname</label>
+        <input id="name" class="input bottom-space" type="text" placeholder="Enter your name and surname" required>
+
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" class="input bottom-space" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" class="input bottom-space" type="number" min="0" max="30" placeholder="Enter your age" required>
+
+        <label for="focus-area">Gender</label>
+        <div id="focus-area" class="container bottom-space">
+            <label for="radio-1" class="overwrite"><input id="radio-1" name="radio-set" type="radio" value="radio-1">
+                Male</label>
+            <label for="radio-2" class="overwrite"><input id="radio-2" name="radio-set" type="radio" value="radio-2">
+                Female</label>
+            <label for="radio-3" class="overwrite"><input id="radio-3" name="radio-set" type="radio" value="radio-3">
+                Other</label>
+        </div>
+        <label id="textarea-label" for="textarea">What is your message?</label>
+        <textarea id="textarea" placeholder="Enter your message here..."></textarea>
+        <div class="top-space">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2022 Product Landing Page</p>
+  </footer>
+
+</body>
+</html>
